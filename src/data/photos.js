@@ -1,8 +1,10 @@
+import servicesHeroPhoto from '@/assets/images/services-hero.webp'
+
 // A consistent set of portrait crops of "the coach", reused across every
 // hero/photo moment so the site reads as one real person's personal brand.
 export const coachPhotos = {
 	homeHero: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80',
-	servicesHero: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&h=900&crop=faces&q=80',
+	servicesHero: servicesHeroPhoto,
 	aboutHero: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80',
 	salesHero: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80',
 	ctaSession: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&h=700&crop=faces&q=80',
