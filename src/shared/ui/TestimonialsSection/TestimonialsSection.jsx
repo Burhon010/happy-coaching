@@ -34,7 +34,7 @@ export function TestimonialsSection({
 					<SectionHeading eyebrow={eyebrow} title={title} align={align} />
 					<div className='grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
 						{visible.map((t) => (
-							<TestimonialCard key={t.id} testimonial={t} ratingStyle='fraction' />
+							<TestimonialCard key={t.id} testimonial={t} />
 						))}
 					</div>
 					<div className='flex items-center gap-3'>
