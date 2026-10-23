@@ -1,7 +1,7 @@
 import { Container } from '@/shared/ui/Container'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { iconMap } from '@/shared/lib/iconMap'
-import { serviceAreas } from '@/data/services'
+import { serviceAreas } from '@/entities/service'
 
 export function FocusAreasGrid() {
 	return (

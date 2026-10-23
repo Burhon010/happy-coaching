@@ -122,4 +122,3 @@ export const salesResults = [
 		text: 'Build habits that hold up months after the program ends, not just during it.'
 	}
 ]
-

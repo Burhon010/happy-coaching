@@ -1,6 +1,6 @@
 import { Container } from '@/shared/ui/Container'
 import { iconMap } from '@/shared/lib/iconMap'
-import { homeFocusAreas } from '@/data/services'
+import { homeFocusAreas } from '@/entities/service'
 
 export function FocusAreas() {
 	return (

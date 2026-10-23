@@ -1,7 +1,7 @@
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
 import { Rating } from '@/shared/ui/Rating'
-import { clientAvatars } from '@/data/photos'
+import { clientAvatars } from '@/shared/config/media'
 
 // Scattered avatars sit in the outer margins of the 1200px container, well
 // clear of the centered max-w-2xl text column, so they never overlap copy.

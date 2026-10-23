@@ -1,5 +1,5 @@
 // Icons are referenced by name (lucide-react) and resolved in the UI layer,
-// so this data file stays framework-agnostic.
+// so this entity's data stays framework-agnostic.
 
 export const homeFocusAreas = [
 	{

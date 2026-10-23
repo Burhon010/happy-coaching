@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import { TestimonialCard } from '@/shared/ui/TestimonialCard'
+import { TestimonialCard } from '@/entities/testimonial'
 import { Button } from '@/shared/ui/Button'
 
 /**

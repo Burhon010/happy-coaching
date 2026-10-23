@@ -1,4 +1,5 @@
 import servicesHeroPhoto from '@/assets/images/services-hero.webp'
+import freeGuideBookPhoto from '@/assets/images/free-guide-book.webp'
 
 // A consistent set of portrait crops of "the coach", reused across every
 // hero/photo moment so the site reads as one real person's personal brand.
@@ -9,7 +10,7 @@ export const coachPhotos = {
 	salesHero: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80',
 	ctaSession: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&h=700&crop=faces&q=80',
 	freeGuideCover: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&h=900&crop=faces&q=80',
-	freeGuideBook: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80',
+	freeGuideBook: freeGuideBookPhoto,
 	salesProgramPhoto: 'https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?auto=format&fit=crop&w=1200&q=80',
 	aboutWide: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=1200&q=80'
 }

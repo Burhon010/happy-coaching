@@ -1,7 +1,7 @@
 import { X, Check } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
-import { notForYou, forYou } from '@/data/fitCheck'
+import { notForYou, forYou } from '@/entities/program-fit'
 
 export function FitCheck() {
 	return (

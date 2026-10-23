@@ -2,9 +2,9 @@ import { Hero } from '../sections/hero'
 import { FitCheck } from '../sections/fit-check'
 import { Guarantee } from '../sections/guarantee'
 import { TransformSection, TestimonialsSection, CtaSession, FaqSection, NewsletterSection } from '@/shared/ui'
-import { salesResults, consultationPoints } from '@/data/transform'
-import { testimonials } from '@/data/testimonials'
-import { coachPhotos } from '@/data/photos'
+import { salesResults, consultationPoints } from '@/entities/highlight'
+import { testimonials } from '@/entities/testimonial'
+import { coachPhotos } from '@/shared/config/media'
 
 export function SalesPage() {
 	return (

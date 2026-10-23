@@ -1,6 +1,6 @@
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
-import { coachPhotos } from '@/data/photos'
+import { coachPhotos } from '@/shared/config/media'
 
 export function Hero() {
 	return (

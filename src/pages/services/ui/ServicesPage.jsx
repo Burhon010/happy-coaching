@@ -1,8 +1,8 @@
 import { Hero } from '../sections/hero'
 import { FocusAreasGrid } from '../sections/focus-areas-grid'
 import { TransformSection, FaqSection, NewsletterSection } from '@/shared/ui'
-import { servicesSteps } from '@/data/transform'
-import { coachPhotos } from '@/data/photos'
+import { servicesSteps } from '@/entities/highlight'
+import { coachPhotos } from '@/shared/config/media'
 
 export function ServicesPage() {
 	return (

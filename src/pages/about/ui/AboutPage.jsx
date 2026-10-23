@@ -1,8 +1,8 @@
 import { Hero } from '../sections/hero'
 import { Press } from '../sections/press'
 import { TestimonialsSection, TransformSection, FaqSection, NewsletterSection } from '@/shared/ui'
-import { testimonials } from '@/data/testimonials'
-import { aboutHighlights } from '@/data/transform'
+import { testimonials } from '@/entities/testimonial'
+import { aboutHighlights } from '@/entities/highlight'
 
 export function AboutPage() {
 	return (

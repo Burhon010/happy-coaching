@@ -1,7 +1,7 @@
 import { Calendar } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
-import { coachPhotos } from '@/data/photos'
+import { coachPhotos } from '@/shared/config/media'
 
 // "Get 15-Minute Complimentary online session." — reused on Home (default
 // "Book now") and the Self Esteem Therapy sales page ("Claim your spot").

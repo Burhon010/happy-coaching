@@ -1,5 +1,5 @@
 import { Container } from '@/shared/ui/Container'
-import { pressMentions } from '@/data/photos'
+import { pressMentions } from '@/shared/config/media'
 
 export function Press() {
 	return (

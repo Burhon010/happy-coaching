@@ -1,6 +1,6 @@
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
-import { blogPosts } from '@/data/blogPosts'
+import { blogPosts } from '@/entities/blog-post'
 
 export function Blog() {
 	return (

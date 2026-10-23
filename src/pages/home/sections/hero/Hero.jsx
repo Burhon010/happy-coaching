@@ -3,7 +3,7 @@ import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
 import { Zigzag } from '@/shared/ui/Zigzag'
 import { StatBadge } from '@/shared/ui/StatBadge'
-import { coachPhotos } from '@/data/photos'
+import { coachPhotos } from '@/shared/config/media'
 
 export function Hero() {
 	return (

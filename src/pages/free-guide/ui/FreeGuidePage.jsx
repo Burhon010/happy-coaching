@@ -1,9 +1,9 @@
 import { Hero } from '../sections/hero'
 import { FinalCta } from '../sections/final-cta'
 import { TestimonialsSection, TransformSection, NewsletterSection } from '@/shared/ui'
-import { testimonials } from '@/data/testimonials'
-import { consultationPoints } from '@/data/transform'
-import { coachPhotos } from '@/data/photos'
+import { testimonials } from '@/entities/testimonial'
+import { consultationPoints } from '@/entities/highlight'
+import { coachPhotos } from '@/shared/config/media'
 
 export function FreeGuidePage() {
 	return (

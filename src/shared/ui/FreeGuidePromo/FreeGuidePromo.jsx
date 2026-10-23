@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
-import { coachPhotos } from '@/data/photos'
+import { coachPhotos } from '@/shared/config/media'
 
 // Compact promo banner for the free guide, used on the Homepage. The Free
 // Guide page itself has its own, bigger hero version.
