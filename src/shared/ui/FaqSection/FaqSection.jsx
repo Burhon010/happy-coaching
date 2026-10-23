@@ -12,9 +12,8 @@ export function FaqSection() {
 		<section className='bg-white py-20 sm:py-24'>
 			<Container className='flex flex-col items-center gap-12'>
 				<SectionHeading
-					eyebrow='FAQ'
 					title='Good to know.'
-					text='A few things people usually want to know before booking a first session.'
+					text='Everything you need to know about my services.'
 					align='center'
 				/>
 
@@ -47,10 +46,9 @@ export function FaqSection() {
 				<div className='flex w-full flex-col items-center gap-4 rounded-3xl bg-sand px-8 py-10 text-center'>
 					<h3 className='text-xl font-bold text-ink'>Still have questions?</h3>
 					<p className='max-w-md text-sm text-body'>
-						Book a free 15-minute call and ask me anything before you commit to a single
-						session.
+						Can't find the answer you're looking for? Please chat to our friendly team.
 					</p>
-					<Button to='/#book'>Book a free session</Button>
+					<Button to='/#book'>Get in touch</Button>
 				</div>
 			</Container>
 		</section>

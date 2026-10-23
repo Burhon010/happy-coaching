@@ -27,7 +27,7 @@ export function Blog() {
 					))}
 				</div>
 
-				<Button href='#'>Read all articles</Button>
+				<Button href='#'>Read more blogs</Button>
 			</Container>
 		</section>
 	)

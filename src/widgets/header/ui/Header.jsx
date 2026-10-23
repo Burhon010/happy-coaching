@@ -7,8 +7,8 @@ import { Button } from '@/shared/ui/Button'
 const NAV_ITEMS = [
 	{ label: 'Home', to: '/' },
 	{ label: 'Services', to: '/services' },
-	{ label: 'Free Guide', to: '/free-guide' },
-	{ label: 'About me', to: '/about' }
+	{ label: 'About us', to: '/about' },
+	{ label: 'Extra Salespage', to: '/self-esteem-therapy' }
 ]
 
 export function Header() {
@@ -51,8 +51,8 @@ export function Header() {
 					))}
 				</nav>
 
-				<Button to='/#book' className='hidden lg:inline-flex'>
-					Book a free session
+				<Button to='/free-guide' className='hidden lg:inline-flex'>
+					Get your free guide now
 				</Button>
 
 				<button
@@ -83,8 +83,8 @@ export function Header() {
 							</NavLink>
 						))}
 					</nav>
-					<Button to='/#book' className='mt-4 w-full' onClick={() => setMenuOpen(false)}>
-						Book a free session
+					<Button to='/free-guide' className='mt-4 w-full' onClick={() => setMenuOpen(false)}>
+						Get your free guide now
 					</Button>
 				</div>
 			)}

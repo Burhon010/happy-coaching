@@ -1,4 +1,4 @@
-import { HeartHandshake } from 'lucide-react'
+import { Target } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
 import { Zigzag } from '@/shared/ui/Zigzag'
@@ -12,18 +12,16 @@ export function Hero() {
 
 			<Container className='grid grid-cols-1 items-center gap-12 md:grid-cols-2'>
 				<div className='flex flex-col gap-6'>
-					<span className='text-xs font-bold tracking-[0.2em] text-body uppercase'>
-						Personal life coach
-					</span>
+					<span className='text-sm text-body'>Proven strategies backed by science for success.</span>
 					<h1 className='text-4xl leading-[1.15] font-bold text-ink sm:text-5xl lg:text-[56px]'>
-						Live life at the <span className='text-accent'>full potential</span>
+						Live life at the full potential
 					</h1>
 					<p className='max-w-md text-base leading-relaxed text-body'>
-						I help ambitious, overwhelmed people reconnect with what they actually want —
-						and build the confidence to go after it.
+						I help people to discover their true potential and live a fulfilling life.
+						Discover the simple steps backed by science. Wanna transform your life?
 					</p>
-					<Button to='/#book' className='mt-2'>
-						Book a free session
+					<Button to='/free-guide' className='mt-2'>
+						Get your free guide now
 					</Button>
 				</div>
 
@@ -36,10 +34,10 @@ export function Hero() {
 						/>
 					</div>
 					<StatBadge
-						icon={HeartHandshake}
-						value='98%'
-						label='client satisfaction'
-						className='absolute -bottom-6 -left-6 w-48 sm:-left-10'
+						icon={Target}
+						value='100%'
+						label='Success rate this year'
+						className='absolute -top-6 -right-4 w-52 sm:-right-10'
 					/>
 				</div>
 			</Container>

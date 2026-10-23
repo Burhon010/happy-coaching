@@ -5,38 +5,43 @@
 export const servicesSteps = [
 	{
 		id: 1,
-		title: 'Book your free intro call',
-		text: 'A relaxed 15-minute conversation so we can both see if coaching together feels right.'
+		icon: 'MessageCircle',
+		title: 'Talk to me first',
+		text: 'A relaxed, no-pressure conversation so we can both see if working together feels right.'
 	},
 	{
 		id: 2,
-		title: 'We build your plan together',
-		text: 'No templates — just a plan shaped entirely around your goals, your pace and your story.'
+		icon: 'Calendar',
+		title: 'Schedule a meeting',
+		text: 'Pick a weekly time that actually fits your schedule — we keep it consistent from there.'
 	},
 	{
 		id: 3,
-		title: 'Start your weekly sessions',
-		text: 'We meet consistently, track what is working, and adjust the plan as real life happens.'
+		icon: 'Video',
+		title: 'Online consultation',
+		text: 'Live video sessions wherever you are, with a plan shaped entirely around your goals.'
 	},
 	{
 		id: 4,
-		title: 'Watch the shift happen',
+		icon: 'Sparkles',
+		title: "Ready to start? Let's talk!",
 		text: 'Small, steady changes compound — most clients feel it within the first few weeks.'
 	}
 ]
 
-export const freeGuidePoints = [
+// Shared across Free Guide and the Sales page's "about the program" section.
+export const consultationPoints = [
 	{
 		id: 1,
-		icon: 'Sparkles',
-		title: 'Practical exercises you can start today',
-		text: 'Not just theory — short, concrete exercises you can actually use the same afternoon.'
+		icon: 'Video',
+		title: 'Online consultation',
+		text: 'A live video session to get clarity on where you are and what should come next.'
 	},
 	{
 		id: 2,
-		icon: 'Compass',
-		title: 'A clear roadmap for what comes next',
-		text: 'Know exactly what the next right step looks like, instead of guessing.'
+		icon: 'MessageCircle',
+		title: "Ready to start? Let's talk!",
+		text: 'A relaxed, no-pressure conversation so we can both see if working together feels right.'
 	}
 ]
 
@@ -118,17 +123,3 @@ export const salesResults = [
 	}
 ]
 
-export const salesProgramPoints = [
-	{
-		id: 1,
-		icon: 'Calendar',
-		title: '8 weeks, one session at a time',
-		text: 'A structured eight-week program with a clear focus for every single week.'
-	},
-	{
-		id: 2,
-		icon: 'Users',
-		title: 'Small group, individual attention',
-		text: 'Capped group size so there is still real space for your own story and questions.'
-	}
-]

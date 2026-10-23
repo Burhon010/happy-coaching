@@ -25,15 +25,15 @@ export const homeFocusAreas = [
 export const serviceAreas = [
 	{
 		id: 1,
-		icon: 'Video',
-		title: 'Online Coaching Sessions',
-		text: 'Live 1:1 video sessions from wherever you are, with a plan tailored to your goals.',
+		icon: 'Users',
+		title: 'Group Coaching Sessions',
+		text: 'Grow alongside people on a similar journey, in a supportive space held every week.',
 		highlight: true
 	},
 	{
 		id: 2,
 		icon: 'BookOpen',
-		title: 'Online courses',
+		title: 'Online course',
 		text: 'Self-paced programs you can work through on your own schedule, with lifetime access.'
 	},
 	{

@@ -7,11 +7,7 @@ export function FocusAreasGrid() {
 	return (
 		<section className='relative bg-white py-20 sm:py-24'>
 			<Container className='flex flex-col items-center gap-16'>
-				<SectionHeading
-					eyebrow='WHAT I OFFER'
-					title='I can help you in these particular areas.'
-					align='center'
-				/>
+				<SectionHeading title='I can help you in these particular areas.' align='center' />
 
 				<div className='grid w-full grid-cols-1 gap-8 sm:grid-cols-2'>
 					{serviceAreas.map((area, i) => {

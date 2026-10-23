@@ -1,32 +1,26 @@
 export const faqItems = [
 	{
 		id: 1,
-		question: 'How do the coaching sessions work?',
+		question: 'How long does the coaching process take?',
 		answer:
-			'Every session is a focused 1:1 conversation, held online over video call. We start with a short intake so I understand exactly where you are, then build a plan tailored to your goals — no generic scripts, no cookie-cutter advice.'
+			'You can try us for free for 30 days. If you want, we\'ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.'
 	},
 	{
 		id: 2,
-		question: 'How long until I start seeing results?',
+		question: 'What if I wanted to end my coaching engagement?',
 		answer:
-			'Most clients notice a shift in mindset within the first two to three sessions, and more concrete changes in habits and confidence over 6–8 weeks. Everyone moves at their own pace, and we adjust the plan as we go.'
+			"You can pause or end your engagement at any time — there are no long-term contracts. Just let me know before your next scheduled session."
 	},
 	{
 		id: 3,
-		question: 'Do I need to know what I want to work on?',
+		question: 'Can I change through coaching?',
 		answer:
-			"Not at all. A lot of clients start out only knowing that something needs to change. Part of our first sessions together is figuring out exactly what that is, and what success looks like for you."
+			'Most clients see real shifts in mindset within the first two to three sessions, with concrete changes in habits and confidence over 6–8 weeks.'
 	},
 	{
 		id: 4,
-		question: 'What if I need to reschedule a session?',
+		question: 'How often do we meet?',
 		answer:
-			'Life happens. You can reschedule up to 24 hours before your session at no extra cost, directly from the confirmation email you receive after booking.'
-	},
-	{
-		id: 5,
-		question: 'Is coaching the same as therapy?',
-		answer:
-			"No. Coaching is forward-focused — we work on where you're going, your goals, habits, and mindset. It isn't a replacement for mental health treatment, and I'll always point you toward a licensed therapist if that's what would serve you best."
+			'Most clients meet weekly, though some prefer every other week. We decide the cadence together based on what you are working through.'
 	}
 ]

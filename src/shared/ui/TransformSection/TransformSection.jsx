@@ -1,7 +1,30 @@
+import { Play } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { SectionHeading } from '@/shared/ui/SectionHeading'
 import { Button } from '@/shared/ui/Button'
 import { iconMap } from '@/shared/lib/iconMap'
+
+// Decorative video-player chrome (play button + progress bar) for the wide
+// photo in the "icons-2" variant — the actual design uses this same "video"
+// treatment on both Free Guide and the Sales page.
+function VideoPhoto({ photo, videoStyle, className }) {
+	return (
+		<div className={`relative overflow-hidden ${className}`}>
+			<img src={photo} alt='' className='h-full w-full object-cover' loading='lazy' />
+			{videoStyle && (
+				<>
+					<div className='absolute inset-0 bg-ink/10' />
+					<span className='absolute top-1/2 left-1/2 flex size-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-ink shadow-lg'>
+						<Play className='size-5 translate-x-0.5 fill-current' />
+					</span>
+					<div className='absolute right-6 bottom-5 left-6 h-1 rounded-full bg-white/40'>
+						<div className='h-full w-1/3 rounded-full bg-white' />
+					</div>
+				</>
+			)}
+		</div>
+	)
+}
 
 /**
  * The recurring "Are you ready to transform your life?" block, in the three
@@ -12,11 +35,12 @@ import { iconMap } from '@/shared/lib/iconMap'
  */
 export function TransformSection({
 	variant = 'icons-grid',
-	eyebrow = 'TRANSFORM',
+	eyebrow = 'How does it work?',
 	title = 'Are you ready to transform your life?',
 	text,
 	items = [],
 	photo,
+	videoStyle = false,
 	background = 'white',
 	ctaButton
 }) {
@@ -29,17 +53,22 @@ export function TransformSection({
 					<div className='flex flex-col gap-8'>
 						<SectionHeading eyebrow={eyebrow} title={title} text={text} />
 						<ol className='flex flex-col gap-6'>
-							{items.map((step, i) => (
-								<li key={step.id} className='flex gap-4'>
-									<span className='flex size-9 shrink-0 items-center justify-center rounded-full bg-ink text-sm font-bold text-white'>
-										{i + 1}
-									</span>
-									<div>
-										<p className='font-semibold text-ink'>{step.title}</p>
-										<p className='mt-1 text-sm text-body'>{step.text}</p>
-									</div>
-								</li>
-							))}
+							{items.map((step) => {
+								const Icon = iconMap[step.icon]
+								return (
+									<li key={step.id} className='flex gap-4'>
+										{Icon && (
+											<span className='flex size-9 shrink-0 items-center justify-center rounded-full bg-accent-light text-accent'>
+												<Icon className='size-4' />
+											</span>
+										)}
+										<div>
+											<p className='font-semibold text-ink'>{step.title}</p>
+											<p className='mt-1 text-sm text-body'>{step.text}</p>
+										</div>
+									</li>
+								)
+							})}
 						</ol>
 					</div>
 					{photo && (
@@ -81,11 +110,10 @@ export function TransformSection({
 						</div>
 					</div>
 					{photo && (
-						<img
-							src={photo}
-							alt=''
-							className='h-72 w-full rounded-3xl object-cover shadow-xl sm:h-96'
-							loading='lazy'
+						<VideoPhoto
+							photo={photo}
+							videoStyle={videoStyle}
+							className='h-72 w-full rounded-3xl shadow-xl sm:h-96'
 						/>
 					)}
 				</Container>

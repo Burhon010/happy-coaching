@@ -1,5 +1,6 @@
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
+import { Rating } from '@/shared/ui/Rating'
 import { clientAvatars } from '@/data/photos'
 
 // Scattered avatars sit in the outer margins of the 1200px container, well
@@ -29,9 +30,6 @@ export function FinalCta() {
 				))}
 
 				<div className='relative mx-auto flex max-w-2xl flex-col items-center gap-6 text-center'>
-					<span className='text-xs font-bold tracking-[0.2em] text-body uppercase'>
-						Free guide
-					</span>
 					<h2 className='text-3xl leading-tight font-bold text-ink sm:text-4xl'>
 						Don't miss out on my{' '}
 						<span className='text-accent'>'Live life at the full potential'</span> free guide
@@ -39,7 +37,11 @@ export function FinalCta() {
 					<p className='max-w-md text-base leading-relaxed text-body'>
 						Join hundreds of readers already using it to build real, lasting confidence.
 					</p>
-					<Button href='#guide-form'>Get the free guide</Button>
+					<Button href='#guide-form'>Download my free guide</Button>
+					<div className='flex flex-col items-center gap-1.5 pt-2'>
+						<p className='text-xs text-body'>More than 500+ 5 star reviews</p>
+						<Rating value={5} />
+					</div>
 				</div>
 			</Container>
 		</section>

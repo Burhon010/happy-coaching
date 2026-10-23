@@ -7,16 +7,16 @@ export function Hero() {
 		<section className='bg-sand pt-14 pb-20 sm:pt-20 sm:pb-28'>
 			<Container className='grid grid-cols-1 items-center gap-12 md:grid-cols-2'>
 				<div className='flex flex-col gap-6'>
-					<span className='text-xs font-bold tracking-[0.2em] text-body uppercase'>Services</span>
+					<span className='text-sm text-body'>I can help you in these particular areas.</span>
 					<h1 className='text-4xl leading-[1.15] font-bold text-ink sm:text-5xl'>
 						I help people to discover their true potential
 					</h1>
 					<p className='max-w-md text-base leading-relaxed text-body'>
-						From a single clarity session to ongoing 1:1 coaching, every service is built
-						to meet you exactly where you are right now.
+						I help people to discover their true potential and live a fulfilling life.
+						Discover the simple steps backed by science. Wanna transform your life?
 					</p>
-					<Button to='/#book' className='mt-2'>
-						Book a free session
+					<Button to='/free-guide' className='mt-2'>
+						Get your free guide now
 					</Button>
 				</div>
 

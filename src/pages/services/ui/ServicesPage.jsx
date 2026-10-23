@@ -11,7 +11,6 @@ export function ServicesPage() {
 			<FocusAreasGrid />
 			<TransformSection
 				variant='steps'
-				eyebrow='HOW IT WORKS'
 				title='Are you ready to transform your life?'
 				text='Here is exactly what working together looks like, from the first call to the first real shift.'
 				items={servicesSteps}

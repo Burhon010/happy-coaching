@@ -1,3 +1,4 @@
+import { MessageCircle } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
 import { coachPhotos } from '@/data/photos'
@@ -9,9 +10,6 @@ export function FreeGuidePromo() {
 		<section className='bg-white py-20 sm:py-24'>
 			<Container className='grid grid-cols-1 items-center gap-12 md:grid-cols-2'>
 				<div className='flex flex-col gap-5'>
-					<span className='text-xs font-bold tracking-[0.2em] text-body uppercase'>
-						FREE GUIDE
-					</span>
 					<h2 className='text-3xl leading-tight font-bold text-ink sm:text-4xl'>
 						Don't miss out on my{' '}
 						<span className='text-accent'>'Live life at the full potential'</span> free guide
@@ -21,7 +19,7 @@ export function FreeGuidePromo() {
 						yours for free, no strings attached.
 					</p>
 					<Button to='/free-guide' className='mt-2'>
-						Get the free guide
+						Get your free guide now
 					</Button>
 				</div>
 
@@ -33,12 +31,16 @@ export function FreeGuidePromo() {
 						loading='lazy'
 					/>
 					<div className='absolute inset-0 bg-gradient-to-t from-purple via-purple/40 to-transparent' />
-					<p className='absolute top-8 right-8 left-8 text-xl font-bold text-white'>
+					<p className='absolute top-9 right-20 left-8 text-xl font-bold text-white'>
 						Are you ready to transform your life?
 					</p>
-					<span className='absolute bottom-6 left-6 flex size-16 items-center justify-center rounded-full bg-accent text-xs font-bold text-white shadow-lg'>
-						Free
+					<span className='absolute top-5 right-5 flex size-16 items-center justify-center rounded-full bg-accent text-center text-[11px] leading-tight font-bold text-white shadow-lg'>
+						Free guide!
 					</span>
+					<div className='absolute bottom-5 left-5 flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-2 text-xs font-semibold text-ink shadow-md backdrop-blur-sm'>
+						<MessageCircle className='size-3.5 text-accent' />
+						Ready to start? Let's talk!
+					</div>
 				</div>
 			</Container>
 		</section>

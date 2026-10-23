@@ -8,7 +8,7 @@ export function FitCheck() {
 		<section className='bg-sand py-20 sm:py-24'>
 			<Container className='flex flex-col items-center gap-14'>
 				<SectionHeading
-					eyebrow='IS THIS FOR YOU?'
+					eyebrow='This is not for everyone!'
 					title='This program is perfect for you if…'
 					align='center'
 				/>

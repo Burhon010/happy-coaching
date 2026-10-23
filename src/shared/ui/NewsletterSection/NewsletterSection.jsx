@@ -29,7 +29,7 @@ export function NewsletterSection() {
 						Get notified when I publish new articles
 					</h3>
 					<p className='mt-2 text-sm text-body'>
-						No spam, ever — just a short note whenever there is something worth reading.
+						Stay up to date with the latest news, announcements, and articles.
 					</p>
 				</div>
 
@@ -46,7 +46,7 @@ export function NewsletterSection() {
 								required
 								value={email}
 								onChange={(e) => setEmail(e.target.value)}
-								placeholder='Your email address'
+								placeholder='Enter your email'
 								className='w-full rounded-full border border-gray-200 bg-white px-5 py-3.5 text-sm focus:border-accent focus:outline-none sm:w-64'
 							/>
 							<button

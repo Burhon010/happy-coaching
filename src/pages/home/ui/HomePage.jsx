@@ -9,7 +9,7 @@ export function HomePage() {
 		<>
 			<Hero />
 			<FocusAreas />
-			<TestimonialsSection variant='slider' items={testimonials} />
+			<TestimonialsSection variant='slider' items={testimonials} align='left' background='sand' />
 			<Blog />
 			<FreeGuidePromo />
 			<CtaSession />

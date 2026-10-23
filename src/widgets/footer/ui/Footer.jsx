@@ -6,18 +6,17 @@ import { InstagramIcon, FacebookIcon, LinkedinIcon } from './icons'
 const PAGE_LINKS = [
 	{ label: 'Home', to: '/' },
 	{ label: 'Services', to: '/services' },
-	{ label: 'Free Guide', to: '/free-guide' },
-	{ label: 'About me', to: '/about' },
-	{ label: 'Self Esteem Therapy', to: '/self-esteem-therapy' }
+	{ label: 'About us', to: '/about' },
+	{ label: 'Extra Sales/Landingpage', to: '/self-esteem-therapy' },
+	{ label: 'Free guide', to: '/free-guide' }
 ]
 
 const CONTACT_LINKS = [
+	{ label: '+123 456 789', href: 'tel:+123456789' },
 	{ label: 'hello@happycoaching.com', href: 'mailto:hello@happycoaching.com' },
-	{ label: '+1 (555) 234-0192', href: 'tel:+15552340192' },
-	{ label: 'Book a free session', to: '/#book' }
+	{ label: 'Instagram', href: '#' },
+	{ label: 'LinkedIn', href: '#' }
 ]
-
-const CURRENT_YEAR = new Date().getFullYear()
 
 const SOCIALS = [
 	{ label: 'Instagram', icon: InstagramIcon, href: '#' },
@@ -38,12 +37,12 @@ export function Footer() {
 							<span className='text-lg font-bold text-ink'>Happy Coaching</span>
 						</Link>
 						<p className='max-w-xs text-sm leading-relaxed text-body'>
-							Helping you live life at full potential, one honest conversation at a time.
+							Design amazing digital experiences that create more happy in the world.
 						</p>
 					</div>
 
 					<div>
-						<h4 className='text-sm font-bold tracking-wide text-ink uppercase'>Pages</h4>
+						<h4 className='text-sm font-bold text-ink'>Pages</h4>
 						<ul className='mt-4 flex flex-col gap-3'>
 							{PAGE_LINKS.map((link) => (
 								<li key={link.to}>
@@ -56,29 +55,21 @@ export function Footer() {
 					</div>
 
 					<div>
-						<h4 className='text-sm font-bold tracking-wide text-ink uppercase'>Contact</h4>
+						<h4 className='text-sm font-bold text-ink'>Contact</h4>
 						<ul className='mt-4 flex flex-col gap-3'>
-							{CONTACT_LINKS.map((link) =>
-								link.to ? (
-									<li key={link.label}>
-										<Link to={link.to} className='text-sm text-body transition-colors hover:text-accent'>
-											{link.label}
-										</Link>
-									</li>
-								) : (
-									<li key={link.label}>
-										<a href={link.href} className='text-sm text-body transition-colors hover:text-accent'>
-											{link.label}
-										</a>
-									</li>
-								)
-							)}
+							{CONTACT_LINKS.map((link) => (
+								<li key={link.label}>
+									<a href={link.href} className='text-sm text-body transition-colors hover:text-accent'>
+										{link.label}
+									</a>
+								</li>
+							))}
 						</ul>
 					</div>
 				</div>
 
 				<div className='flex flex-col items-center justify-between gap-4 pt-6 sm:flex-row'>
-					<p className='text-xs text-body'>© {CURRENT_YEAR} Happy Coaching. All rights reserved.</p>
+					<p className='text-xs text-body'>Made with ♥ by HappyDigital</p>
 					<div className='flex items-center gap-3'>
 						{SOCIALS.map((social) => (
 							<a

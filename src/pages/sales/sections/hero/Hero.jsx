@@ -7,18 +7,16 @@ export function Hero() {
 		<section className='bg-sand pt-14 pb-20 sm:pt-20 sm:pb-28'>
 			<Container className='grid grid-cols-1 items-center gap-12 md:grid-cols-2'>
 				<div className='flex flex-col gap-6'>
-					<span className='text-xs font-bold tracking-[0.2em] text-body uppercase'>
-						8-week program
-					</span>
+					<span className='text-sm text-body'>Proven strategies backed by science for success.</span>
 					<h1 className='text-4xl leading-[1.15] font-bold text-ink sm:text-5xl'>
 						Self Esteem Therapy
 					</h1>
 					<p className='max-w-md text-base leading-relaxed text-body'>
-						A guided, small-group program to help you quiet your inner critic and build a
-						steady, lasting sense of self-worth — in eight weeks.
+						I help people to discover their true potential and live a fulfilling life.
+						Discover the simple steps backed by science. Wanna transform your life?
 					</p>
 					<Button to='/#book' className='mt-2'>
-						Reserve your spot
+						Claim your spot
 					</Button>
 				</div>
 

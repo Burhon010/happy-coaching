@@ -12,9 +12,7 @@ export function Hero() {
 
 			<Container className='grid grid-cols-1 items-center gap-12 md:grid-cols-2'>
 				<div className='flex flex-col gap-6'>
-					<span className='text-xs font-bold tracking-[0.2em] text-body uppercase'>
-						About me
-					</span>
+					<span className='text-sm text-body'>About us</span>
 					<h1 className='text-4xl leading-[1.15] font-bold text-ink sm:text-5xl'>
 						The person behind Happy Coaching
 					</h1>
@@ -22,8 +20,8 @@ export function Hero() {
 						I spent years chasing other people's definition of success before I found my
 						own. Now I help people build a life that is actually, honestly theirs.
 					</p>
-					<Button to='/#book' className='mt-2'>
-						Book a free session
+					<Button to='/free-guide' className='mt-2'>
+						Get your free guide now
 					</Button>
 				</div>
 

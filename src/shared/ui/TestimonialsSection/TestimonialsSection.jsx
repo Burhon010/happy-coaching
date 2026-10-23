@@ -6,13 +6,14 @@ import { TestimonialCard } from '@/shared/ui/TestimonialCard'
 import { Button } from '@/shared/ui/Button'
 
 /**
- * Reused across Home (slider), Free Guide / Sales (2x2 grid) and About me
+ * Reused across Home (slider), Free Guide / Sales (2x2 grid) and About us
  * (3-up, staggered by height).
  */
 export function TestimonialsSection({
 	variant = 'slider',
-	eyebrow = 'TESTIMONIALS',
+	eyebrow,
 	title = 'Hear out what my clients say about me.',
+	align = 'center',
 	items,
 	ctaButton,
 	background = 'sand'
@@ -25,11 +26,12 @@ export function TestimonialsSection({
 		const visible = Array.from({ length: Math.min(visibleCount, items.length) }, (_, i) => items[(start + i) % items.length])
 		const next = () => setStart((s) => (s + 1) % items.length)
 		const prev = () => setStart((s) => (s - 1 + items.length) % items.length)
+		const rowAlign = align === 'left' ? 'items-start' : 'items-center'
 
 		return (
 			<section className={`py-20 sm:py-24 ${bgClass}`}>
-				<Container className='flex flex-col items-center gap-12'>
-					<SectionHeading eyebrow={eyebrow} title={title} align='center' />
+				<Container className={`flex flex-col gap-12 ${rowAlign}`}>
+					<SectionHeading eyebrow={eyebrow} title={title} align={align} />
 					<div className='grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
 						{visible.map((t) => (
 							<TestimonialCard key={t.id} testimonial={t} />
