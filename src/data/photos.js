@@ -22,5 +22,5 @@ export const clientAvatars = [
 	'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&facepad=2.5&w=160&h=160&q=80'
 ]
 
-// Generic "as featured in" wordmarks — fictional press names, not real logos.
-export const pressMentions = ['THE JOURNAL', 'WELLNESS CO', 'MINDFUL TIMES', 'LIFE & CO', 'THRIVE MAG']
+// "As featured in" wordmarks, matching the Figma file's own placeholder logos.
+export const pressMentions = ['Layers', 'Skyphoria', 'Encodas', 'Catalog', 'Quotient']

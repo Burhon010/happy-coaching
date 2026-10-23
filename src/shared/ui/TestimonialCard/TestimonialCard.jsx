@@ -14,12 +14,16 @@ function renderText(text) {
 	)
 }
 
-export function TestimonialCard({ testimonial, className = '' }) {
+export function TestimonialCard({ testimonial, ratingStyle = 'stars', className = '' }) {
 	return (
 		<article
 			className={`flex h-full flex-col gap-5 rounded-3xl bg-white p-7 shadow-[0_20px_40px_-20px_rgba(30,30,90,0.15)] ${className}`}
 		>
-			<Rating value={testimonial.rating} />
+			{ratingStyle === 'fraction' ? (
+				<span className='text-sm font-bold text-accent'>{testimonial.rating}/5</span>
+			) : (
+				<Rating value={testimonial.rating} />
+			)}
 			<p className='flex-1 text-sm leading-relaxed text-body'>{renderText(testimonial.text)}</p>
 			<div className='flex items-center gap-3 border-t border-gray-100 pt-5'>
 				<img

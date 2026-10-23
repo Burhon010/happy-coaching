@@ -1,4 +1,4 @@
-import { Award } from 'lucide-react'
+import { Users } from 'lucide-react'
 import { Container } from '@/shared/ui/Container'
 import { Button } from '@/shared/ui/Button'
 import { Zigzag } from '@/shared/ui/Zigzag'
@@ -12,10 +12,8 @@ export function Hero() {
 
 			<Container className='grid grid-cols-1 items-center gap-12 md:grid-cols-2'>
 				<div className='flex flex-col gap-6'>
-					<span className='text-sm text-body'>About us</span>
-					<h1 className='text-4xl leading-[1.15] font-bold text-ink sm:text-5xl'>
-						The person behind Happy Coaching
-					</h1>
+					<span className='text-sm text-body'>Proven strategies backed by science for success.</span>
+					<h1 className='text-4xl leading-[1.15] font-bold text-ink sm:text-5xl'>About me</h1>
 					<p className='max-w-md text-base leading-relaxed text-body'>
 						I spent years chasing other people's definition of success before I found my
 						own. Now I help people build a life that is actually, honestly theirs.
@@ -30,10 +28,10 @@ export function Hero() {
 						<img src={coachPhotos.aboutHero} alt='Coach portrait' className='h-full w-full object-cover' />
 					</div>
 					<StatBadge
-						icon={Award}
-						value='8 years'
-						label='coaching experience'
-						className='absolute -right-4 -bottom-6 w-48 sm:-right-10'
+						icon={Users}
+						value='300+'
+						label='Clients coached'
+						className='absolute top-1/2 -right-4 w-44 -translate-y-1/2 sm:-right-10'
 					/>
 				</div>
 			</Container>
