@@ -6,7 +6,7 @@ import freeGuideBookPhoto from '@/assets/images/free-guide-book.webp'
 export const coachPhotos = {
 	homeHero: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80',
 	servicesHero: servicesHeroPhoto,
-	aboutHero: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=80',
+	aboutHero: freeGuideBookPhoto,
 	salesHero: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80',
 	ctaSession: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&h=700&crop=faces&q=80',
 	freeGuideCover: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&h=900&crop=faces&q=80',
